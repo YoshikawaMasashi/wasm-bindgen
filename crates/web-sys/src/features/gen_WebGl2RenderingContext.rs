@@ -2132,6 +2132,24 @@ extern "C" {
         type_: u32,
         pixels: Option<&[u8]>,
     ) -> Result<(), JsValue>;
+    # [wasm_bindgen (catch , method , structural , js_class = "WebGL2RenderingContext" , js_name = texImage2D)]
+    #[doc = "The `texImage2D()` method."]
+    #[doc = ""]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext/texImage2D)"]
+    #[doc = ""]
+    #[doc = "*This API requires the following crate features to be activated: `WebGl2RenderingContext`*"]
+    pub fn tex_image_2d_with_i32_and_i32_and_i32_and_format_and_type_and_opt_f32_array(
+        this: &WebGl2RenderingContext,
+        target: u32,
+        level: i32,
+        internalformat: i32,
+        width: i32,
+        height: i32,
+        border: i32,
+        format: u32,
+        type_: u32,
+        pixels: Option<&[f32]>,
+    ) -> Result<(), JsValue>;
     #[cfg(feature = "HtmlCanvasElement")]
     # [wasm_bindgen (catch , method , structural , js_class = "WebGL2RenderingContext" , js_name = texImage2D)]
     #[doc = "The `texImage2D()` method."]
